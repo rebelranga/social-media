@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOCIAL BOOK</title>
+    <!-- ................CUSTOM CSS LINK................... -->
+    <link rel="stylesheet" href="styleeeeeeeeeee.css">
+</head>
+<body>
+    <!-- .............START NAV SECTION...................... -->
+    <nav>
+        <div class="container nav-container">
+            <h2 class="logo">
+                social<span>book</span>
+            </h2>
+            <div class="search-bar">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png" class="icon2">
+                <input type="search" placeholder="search for creater...">
+            </div>
+            <div class="create">
+                <label for="creatPost" class="btn btn-primary" >update</label>
+                <div class="profile-phots">
+                    <img src="https://c.ndtvimg.com/gws/2278/assets/1.jpeg?1619080517" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ................END NAV SECTION......................... -->
+
+
+
+    <!-- ................START MAINE SECTION......................... -->
+    <main>
+        <div class="container main-container">
+            <!--=======MAIN LEFT======== -->
+            <div class="main-left">
+              <div class="profile">
+                <div class="profile-phots">
+                    <img src="https://c.ndtvimg.com/gws/2278/assets/1.jpeg?1619080517" alt="">
+                </div> 
+                <div class="hendel">
+                    <h4>Virat KOhli</h4>
+                    <p class="text-gry">@thebegjoker</p>
+                </div>  
+              </div>
+
+              <!--.............. SIDEBAR.............. -->
+              <div class="side-bar"> 
+
+                <a class="menu-item active" >
+                    <span><img src="data:image/png;base64,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" class="icon1"></span><h3>home</h3>
+                </a>
+                <a class="menu-item " >
+                    <span><img src="https://thumbs.dreamstime.com/b/inspiring-design-explore-letter-symbol-logo-vector-illustration-unique-drawn-activity-script-print-wild-explorer-black-white-169644956.jpg" class="icon1"></span><h3>explore</h3>
+                </a>
+                <a class="menu-item" id="notifice">
+                    <span> <small class="count">9</small> <img src="data:image/png;base64,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" class="icon1"></span><h3>notifications</h3>
+                    <!-- ....................notification............................ -->
+                    <div class="notification">
+                        <div class="NP">
+                            <div class="profile-phots">
+                                <img src="data:image/png;base64,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" alt="">
+                            </div> 
+                            <div class="notification-body">
+                                <b>melody</b> accepted your firend request  
+                                <small class="text-gry"> 1 minutes ago</small>                              
+                            </div>
+                        </div>
+                        <div class="NP">
+                            <div class="profile-phots">
+                                <img src="https://tse3.mm.bing.net/th?id=OIP.EtgX-bPLB-7bPK2Pja4LFQHaJk&pid=Api&P=0" alt="">
+                            </div> 
+                            <div class="notification-body">
+                                <b>jhon lew</b> commented your post 
+                                <small class="text-gry"> 4 minutes ago</small>                              
+                            </div>
+                        </div>
+                        <div class="NP">
+                            <div class="profile-phots">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNGM5YmYwNjUtNzQyYS00OGY0LTljZDAtMDNiMjhiOTFiMzRiXkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_.jpg" alt="">
+                            </div> 
+                            <div class="notification-body">
+                                <b>leah pry</b>  liked your post 
+                                <small class="text-gry"> 10 minutes ago</small>                              
+                            </div>
+                        </div>
+                        <div class="NP">
+                            <div class="profile-phots">
+                                <img src="https://tse1.mm.bing.net/th?id=OIP.ZuBKt0_3GgRejlYCtfjg_QAAAA&pid=Api&P=0" alt="">
+                            </div> 
+                            <div class="notification-body">
+                                <b>david</b> liked your post 
+                                <small class="text-gry"> 20 minutes ago</small>                              
+                            </div>
+                        </div>
+                        <div class="NP">
+                            <div class="profile-phots">
+                                <img src="https://imagevars.gulfnews.com/2019/06/11/190611-Ranbir-Kapoor_16b46a41ffd_large.jpg" alt="">
+                            </div> 
+                            <div class="notification-body">
+                                <b>angla fox</b> reacted your post 
+                                <small class="text-gry"> 1 hour ago</small>                              
+                            </div>
+                        </div>
+                        <div class="NP">
+                            <div class="profile-phots">
+                                <img src="https://tse3.mm.bing.net/th?id=OIP.zeS0pUiihVtRLifFAmmOMwHaGL&pid=Api&P=0" alt="">
+                            </div> 
+                            <div class="notification-body">
+                                <b>lana</b>  accepted your firend request
+                                <small class="text-gry">2 hour ago</small>                              
+                            </div>
+                        </div>
+                        <div class="NP">
+                            <div class="profile-phots">
+                                <img src="https://tse3.mm.bing.net/th?id=OIP.alYbv39H1B66yRr6NsT8nQHaLI&pid=Api&P=0" alt="">
+                            </div> 
+                            <div class="notification-body">
+                                <b>mark newton</b> accepted your firend request
+                                <small class="text-gry"> 2 days ago</small>                              
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="menu-item"  id="message">
+                    <span> <small class="count">3</small> <img src="https://cdn-icons-png.flaticon.com/512/685/685887.png" class="icon1"></span><h3>message</h3>
+                </a>
+                <a class="menu-item " >
+                    <span><img src="https://thumbs.dreamstime.com/b/bookmark-tag-vector-icon-filled-flat-sign-mobile-concept-web-design-bookmarks-simple-solid-symbol-logo-illustration-pixel-131469967.jpg" class="icon1"></span><h3>bookmarks</h3>
+                </a>
+                <a class="menu-item " >
+
+                    <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLmc6yEkTk_uy81aSKbg5Dn96DUdyoc2dkFQ&usqp=CAU" class="icon1"></span><h3>analytics</h3>
+                </a>
+                <a class="menu-item " id="themeMenu">
+                    <span><img src="https://i.pinimg.com/originals/32/b9/71/32b971a3ef7e0adc6bfe58706221432e.png" class="icon1"></span><h3>theme</h3>
+                </a>
+                <a class="menu-item g" >
+                    <span><img src="https://w7.pngwing.com/pngs/943/964/png-transparent-computer-icons-logo-youtube-symbol-youtube-area-theme-settings.png" class="icon1"></span><h3>setings</h3>
+                </a>   
+
+                <label for="creatPost" class="btn btn-primary" >create post</label>
+         
+              </div>
+
+            </div>
+            <!-- =======MAIN MID======= -->
+            <div class="main-mid">
+                
+                <!-- storys..start.. -->
+                <div class="storys">
+                    <div class="story">
+                        <div class="profile-phots">
+                            <img src="https://img.mensxp.com/media/content/2020/Jun/Virat-Kohli-Slide-1_5ef9562dcbd4a.jpeg" alt="">
+                        </div>
+                        <p>your story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-phots">
+                            <img src="https://static.indiatvnews.com/ins-web/images/anushka-3082-1541034692.jpg" alt="">
+                        </div>
+                        <p>Anushka sharma</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-phots">
+                            <img src="https://c.ndtvimg.com/2021-07/gs2djea8_ms-dhoni-new-look-instagram_625x300_30_July_21.jpg" alt="">
+                        </div>
+                        <p>M.S Dhoni</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-phots">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpVvPqxaBd8sl-Ny3rdDG95RaNHcsy16Mdvs-yF6Iw2yMMjidZNXEyK6oWFUMZxUmj2E8&usqp=CAU" alt="">
+                        </div>
+                        <p>Prabhas</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-phots">
+                            <img src="https://preview.redd.it/iq9jn57q38s81.jpg?width=439&format=pjpg&auto=webp&s=935df66bc26fe1305a2b5571cdb4348ca124a173" alt="">
+                        </div>
+                        <p>Katrina Kaif</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-phots">
+                            <img src="https://i.pinimg.com/236x/da/12/8f/da128f554a169422d86a57a332c0bd15.jpg" alt="">
+                        </div>
+                        <p>Ranbir Kapoor</p>
+                    </div>                
+
+                
+                </div>                
+                <!-- storys..end.. -->
+                <form class="creatPost">
+                    <div class="profile-phots">
+                        <img src="https://s3.india.com/wp-content/uploads/2019/11/Virat-Kohli-2.jpg" alt="">
+                    </div>
+                   <div class="text-post">
+                      <input type="text" placeholder="whast's on your mind?" class="creatPost">
+                   </div>
+
+                   <div>
+                       <input type="submit" value="post" class="btn btn-primary">
+                   </div>
+                </form>
+
+                <!--..................feeds..start...............................-->
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-phots">
+                                    <img src="https://images.mygoodtimes.in/wp-content/uploads/2018/08/01085438/anushka-sharma-e1588323290293.jpg" alt="">                                    
+                                </div>
+                                <div class="info">
+                                    <h3>Anushka Sharma</h3>
+                                    <small>india, 15 minutes ago</small>
+                                </div>                               
+                            </div>
+                            <span class="edit">
+                                <img src="https://textilevaluechain.in/wp-content/uploads/2020/07/Anushka-Sharma-in-a-chikankari-white-kurta-set.jpg" class="icon1">
+                            </span>
+                        </div>
+                            <div class="feed-phots">
+                                <img src="https://media.newstrack.in/amp/uploads/entertainment-news/bollywood-news/Dec/13/big_thumb/1_5fd5c9e81c110.png" alt="">
+                            </div>
+                            <div class="action-buttons">
+                                <div class="inter-action-button">
+                                    <span><img src="https://static.zoomnews.com/photo/91231429/91231429.jpg" class="icon2"></span>
+                                    <span><img src="https://images.herzindagi.info/image/2019/Aug/anushka-sharma-bridal-photoshoot-main.jpg" class="icon2"></span>
+                                    <span><img src="https://wp.missmalini.com/wp-content/uploads/2018/09/Screen-Shot-2018-09-21-at-5.31.45-PM-1.jpg" class="icon2"></span>
+                                </div>
+                                <div class="book-mark">
+                                   <span><img src="https://e1.pxfuel.com/desktop-wallpaper/436/807/desktop-wallpaper-cristiano-ronaldo-football-sport-iphone-11-cristiano-ronaldo-style.jpg" class="icon2"></span>
+                                </div>
+                            </div>
+                            <div class="liked-by">
+                                <span><img src="https://e1.pxfuel.com/desktop-wallpaper/436/807/desktop-wallpaper-cristiano-ronaldo-football-sport-iphone-11-cristiano-ronaldo-style.jpg" alt=""></span>
+                                <span><img src="https://m.timesofindia.com/photo/96340383/96340383.jpg" alt=""></span>
+                                <span><img src="https://i0.wp.com/www.menstylefashion.com/wp-content/uploads/2015/07/christiano-ronaldo-form-football-to-fashion.jpg?resize=750%2C1125&ssl=1" alt=""></span>
+                                <p>like by <b>deniel rivar </b> and<b> 105 others pepoles</b></p>                                                                  
+                            </div>
+                            <div class="caption">
+                                <p><b>angela rose</b>Lorem, ipsum dolor sit amet consectetur. <span class="hash-teg">#lifestyle</span></p>
+                            </div> 
+                            <div class="text-gry comment">view all comments</div> 
+                    </div> 
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-phots">
+                                    <img src="https://wallpapercave.com/wp/wp10618550.jpg" alt="">                                    
+                                </div>
+                                <div class="info">
+                                    <h3>Ronaldo</h3>
+                                    <small>porchugal, 15 minutes ago</small>
+                                </div>                               
+                            </div>
+                            <span class="edit">
+                                <img src="https://w0.peakpx.com/wallpaper/126/365/HD-wallpaper-ronaldo-modle-style-cr7-cr77-cristinano-ronaldo-georgina-rodriguze-juventus-modler-modling-nature-trendy-viral.jpg" class="icon1">
+                            </span>
+                        </div>
+                            <div class="feed-phots">
+                                <img src="https://i.pinimg.com/originals/6a/33/fc/6a33fca3ba1e15dc1e38b08dd63c926f.jpg" alt="">
+                            </div>
+                            <div class="action-buttons">
+                                <div class="inter-action-button">
+                                    <span><img src="https://i.pinimg.com/originals/b2/b4/72/b2b4720860d6c087b50e4c3b5373bb0c.jpg" class="icon2"></span>
+                                    <span><img src="https://www.cristianoronaldo.com/assets/images/brand_eyewear.jpg?832236" class="icon2"></span>
+                                    <span><img src="https://media.gettyimages.com/id/843855812/photo/crisitiano-ronaldo-celebrates-the-launch-of-his-new-fragrance-cr7-on-september-7-2017-in.jpg?s=612x612&w=gi&k=20&c=LOpoAsWnRyNfb7RLysUonPCl_sjRplOCoWwT6LcdrMg=" class="icon2"></span>
+                                </div>
+                                <div class="book-mark">
+                                   <span><img src="data:image/jpeg;base64,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" class="icon2"></span>
+                                </div>
+                            </div>
+                            <div class="liked-by">
+                                <span><img src="https://wallpapercave.com/wp/wp9500197.jpg" alt=""></span>
+                                <span><img src="img/p4.png" alt=""></span>
+                                <span><img src="https://www.iwmbuzz.com/wp-content/uploads/2021/07/neymars-approved-fashion-style-to-cast-an-impression.jpg" alt=""></span>
+                                <p>like by <b>deniel rivar </b> and<b> 105 others pepoles</b></p>                                                                  
+                            </div>
+                            <div class="caption">
+                                <p><b>angela rose</b>Lorem, ipsum dolor sit amet consectetur. <span class="hash-teg">#lifestyle</span></p>
+                            </div> 
+                            <div class="text-gry comment">view all comments</div> 
+                    </div>        
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-phots">
+                                    <img src="https://media.gettyimages.com/id/693134468/photo/tom-cruise-attends-the-the-mummy-new-york-fan-eventat-amc-loews-lincoln-square-on-june-6-2017.jpg?s=612x612&w=gi&k=20&c=aNbayuutLzdI9hH0nHfYSx8vh_tCXLXwJDbtsc7oFds=" alt="">                                    
+                                </div>
+                                <div class="info">
+                                    <h3>TOM Cruise</h3>
+                                    <small>america, updated profile</small>
+                                </div>                               
+                            </div>
+                            <span class="edit">
+                                <img src="https://i.pinimg.com/236x/95/f0/ea/95f0ea41bcf15600050bad59a5ef5240--mens-medium-length-hairstyles-long-hairstyles-for-men.jpg" class="icon1">
+                            </span>
+                        </div>
+                            <div class="feed-phots">
+                                <img src="https://media.gq.com/photos/592f0d2d61da1f10358f30f7/master/w_2038,h_3058,c_limit/tom-cruise-press-tour-mummy-4.jpg" alt="">
+                            </div>
+                            <div class="action-buttons">
+                                <div class="inter-action-button">
+                                    <span><img src="https://media.gq.com/photos/5583e4363655c24c6c971d60/master/w_1600%2Cc_limit/style-2015-03-tom-cruise-sip-tom-cruise-sip-gq-magazine-2015-01.jpg" class="icon2"></span>
+                                    <span><img src="https://c8.alamy.com/comp/C3475P/tom-cruise-has-no-need-for-a-winter-coat-as-he-leaves-his-manhattan-C3475P.jpg" class="icon2"></span>
+                                    <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUqxoOAGZ04Bw313bFPzPt0sqNeXUmn_Yjw&usqp=CAU" class="icon2"></span>
+                                </div>
+                                <div class="book-mark">
+                                   <span><img src="https://i.pinimg.com/originals/d6/14/ea/d614eac61b1f692bcebad5f20d0b3042.jpg" class="icon2"></span>
+                                </div>
+                            </div>
+                            <div class="liked-by">
+                                <span><img src="https://pbs.twimg.com/media/D0fVkBnXgAMHvaW.jpg" alt=""></span>
+                                <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUqxoOAGZ04Bw313bFPzPt0sqNeXUmn_Yjw&usqp=CAU" alt=""></span>
+                                <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_FM_m3BT9Ptpy2UwCqGGsrHbsJ4xlDFuOzCo8X5wJTFJlBKPyehyFRyab79GO2Emi0Q&usqp=CAU" alt=""></span>
+                                <p>like by <b>deniel rivar </b> and<b> 105 others pepoles</b></p>                                                                  
+                            </div>
+                            <div class="caption">
+                                <p><b>angela rose</b>Lorem, ipsum dolor sit amet consectetur. <span class="hash-teg">#lifestyle</span></p>
+                            </div> 
+                            <div class="text-gry comment">view all comments</div> 
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-phots">
+                                    <img src="https://www4.pictures.stylebistro.com/gi/Heavenly+Bodies+Fashion+Catholic+Imagination+kdJcE_KRW6Xx.jpg" alt="">                                    
+                                </div>
+                                <div class="info">
+                                    <h3>Deniel Rivar</h3>
+                                    <small>america, just now</small>
+                                </div>                               
+                            </div>
+                            <span class="edit">
+                                <img src="https://thumbs.dreamstime.com/b/amber-heard-gala-screening-sorry-angel-st-festival-de-cannes-%C2%A9-paul-smith-featureflash-france-may-picture-silverhub-166811858.jpg" class="icon1">
+                            </span>
+                        </div>
+                            <div class="feed-phots">
+                                <img src="https://assets.vogue.com/photos/5891949bce34fb453af7bc8b/master/w_1348,h_2000,c_limit/amber-heard-hair-beauty-holding.jpg" alt="">
+                            </div>
+                            <div class="action-buttons">
+                                <div class="inter-action-button">
+                                    <span><img src="https://media.glamour.com/photos/5695e93593ef4b09520f5db4/master/w_1600%2Cc_limit/beauty-2015-07-amber-heard-hair-inspiration-2-main.jpg" class="icon2"></span>
+                                    <span><img src="https://www3.pictures.stylebistro.com/gi/Final+Day+Johnny+Depp+Libel+Trial+XMU80RAY0cfp.jpg" class="icon2"></span>
+                                    <span><img src="https://medias.spotern.com/people/w320/0/346-1532336937.jpg" class="icon2"></span>
+                                </div>
+                                <div class="book-mark">
+                                   <span><img src="https://i.pinimg.com/236x/05/51/22/0551228ec554bed389b9cb772ce006b0.jpg" class="icon2"></span>
+                                </div>
+                            </div>
+                            <div class="liked-by">
+                                <span><img src="https://www.iwmbuzz.com/wp-content/uploads/2021/05/tom-cruise-and-his-street-style-fashion-sense-is-a-class-apart-see-pics-3.jpeg" alt=""></span>
+                                <span><img src="img/p4.png" alt=""></span>
+                                <span><img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fwp-content%2Fblogs.dir%2F4%2Ffiles%2F2020%2F09%2Fsamuel-l-jackson-nick-fury-disney-plus-series-0.jpg?w=960&cbr=1&q=90&fit=max" alt=""></span>
+                                <p>like by <b>deniel rivar </b> and<b> 105 others pepoles</b></p>                                                                  
+                            </div>
+                            <div class="caption">
+                                <p><b>angela rose</b>Lorem, ipsum dolor sit amet consectetur. <span class="hash-teg">#lifestyle</span></p>
+                            </div> 
+                            <div class="text-gry comment">view all comments</div> 
+                    </div>                   
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-phots">
+                                    <img src="https://images.mid-day.com/images/images/2014/jul/10AB-de-Villiers-1.jpg" alt="">                                    
+                                </div>
+                                <div class="info">
+                                    <h3>A B Develiers</h3>
+                                    <small>South Africa, 15 minutes ago</small>
+                                </div>                               
+                            </div>
+                            <span class="edit">
+                                <img src="https://images.mid-day.com/images/images/2014/jul/10AB-de-Villiers-1.jpg" class="icon1">
+                            </span>
+                        </div>
+                            <div class="feed-phots">
+                                <img src="https://i.pinimg.com/originals/ff/3c/58/ff3c5887de0e152f6f3776aa104dc7dc.jpg" alt="">
+                            </div>
+                            <div class="action-buttons">
+                                <div class="inter-action-button">
+                                    <span><img src="https://imagevars.gulfnews.com/2015/2/21/1_16a083a7d2d.1460439_2387582954_16a083a7d2d_medium.jpg" class="icon2"></span>
+                                    <span><img src="https://e0.365dm.com/19/07/768x432/skysports-ab-de-villiers-south-africa_4716119.jpg?20190712112318" class="icon2"></span>
+                                    <span><img src="https://www.101india.com/sites/default/files/image-upload/blogs/Sports/2018_24May_Goodbye_AB/ab-de-villiers-retire-inline-2-ab-with-a-bat.png" class="icon2"></span>
+                                </div>
+                                <div class="book-mark">
+                                   <span><img src="https://i.ndtvimg.com/i/2017-08/ab-de-villiers-twitter_806x605_41503505668.jpg" class="icon2"></span>
+                                </div>
+                            </div>
+                            <div class="liked-by">
+                                <span><img src="https://i.pinimg.com/originals/c8/78/b4/c878b439632764c32e41e7b6865bd015.jpg" alt=""></span>
+                                <span><img src="img/p4.png" alt=""></span>
+                                <span><img src="https://i.pinimg.com/originals/ce/6c/98/ce6c985bf162d6853f70fa8aff2c0b96.jpg" alt=""></span>
+                                <p>like by <b>deniel rivar </b> and<b> 105 others pepoles</b></p>                                                                  
+                            </div>
+                            <div class="caption">
+                                <p><b>angela rose</b>Lorem, ipsum dolor sit amet consectetur. <span class="hash-teg">#lifestyle</span></p>
+                            </div> 
+                            <div class="text-gry comment">view all comments</div> 
+                    </div>                  
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-phots">
+                                    <img src="https://w0.peakpx.com/wallpaper/456/58/HD-wallpaper-tamanna-bhatia-white-jeans-hot-actresses-hot-indian-actress-jeans-fashion-cute-bollywood-actresses-bollywood-hot-actress-hot-bollywood-actress-jeans.jpg" alt="">                                    
+                                </div>
+                                <div class="info">
+                                    <h3>Thammana</h3>
+                                    <small>India, 15 minutes ago</small>
+                                </div>                               
+                            </div>
+                            <span class="edit">
+                                <img src="https://cdn.shopify.com/s/files/1/1384/4105/files/images-of-tamanna-in-half-saree_2048x2048.jpg?v=1527833288" class="icon1">
+                            </span>
+                        </div>
+                            <div class="feed-phots">
+                                <img src="https://www.bollywoodhungama.com/wp-content/uploads/2021/09/Tamannaah-Bhatia-glows-in-radiant-blue-saree-gown-worth-Rs.-45000-2.jpg" alt="">
+                            </div>
+                            <div class="action-buttons">
+                                <div class="inter-action-button">
+                                    <span><img src="https://i.pinimg.com/736x/88/af/c6/88afc6373ad7630855e089425e386382.jpg" class="icon2"></span>
+                                    <span><img src="https://1.bp.blogspot.com/-S6kP1Az9ElE/WFPHNybwYwI/AAAAAAAATgA/sSHQBCWbZ4ICkrFwbtPB70LaBkaRuryDACLcB/s720/tamanna-at-southscope-lifestyle-awards-001.JPG" class="icon2"></span>
+                                    <span><img src="https://wallpapercave.com/wp/wp2828792.jpg" class="icon2"></span>
+                                </div>
+                                <div class="book-mark">
+                                   <span><img src="https://s3.amazonaws.com/cheershopping/productimage/2014/thumnail/30122014/vaikunth-fabrics-287.jpg" class="icon2"></span>
+                                </div>
+                            </div>
+                            <div class="liked-by">
+                                <span><img src="https://i.pinimg.com/736x/0f/f0/9b/0ff09b7de56cc97aa5632e8d44feeee4.jpg" alt=""></span>
+                                <span><img src="img/p4.png" alt=""></span>
+                                <span><img src="https://img.indiaforums.com/article/1040x780/13/0361-fashion-statement-its-fun-to-experiment-with-style-says-virat-kohli.jpg" alt=""></span>
+                                <p>like by <b>deniel rivar </b> and<b> 105 others pepoles</b></p>                                                                  
+                            </div>
+                            <div class="caption">
+                                <p><b>angela rose</b>Lorem, ipsum dolor sit amet consectetur. <span class="hash-teg">#lifestyle</span></p>
+                            </div> 
+                            <div class="text-gry comment">view all comments</div> 
+                    </div>         
+   
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-phots">
+                                    <img src="https://tse3.mm.bing.net/th?id=OIP.KyaxzZnTP9SMt5aweEP8agHaFj&pid=Api&P=0" alt="">                                    
+                                </div>
+                                <div class="info">
+                                    <h3>Depika Padukone</h3>
+                                    <small>India, 15 minutes ago</small>
+                                </div>                               
+                            </div>
+                            <span class="edit">
+                                <img src="https://www.filmibeat.com/wimg/desktop/2019/07/deepika-padukone_12.jpg" class="icon1">
+                            </span>
+                        </div>
+                            <div class="feed-phots">
+                                <img src="https://tse3.mm.bing.net/th?id=OIP.WdP3nVNpNtc8jrt7LzzOaQHaNL&pid=Api&P=0" alt="">
+                            </div>
+                            <div class="action-buttons">
+                                <div class="inter-action-button">
+                                    <span><img src="https://2.bp.blogspot.com/-SALYhhHZwEc/VlBgr8o08vI/AAAAAAAA7m8/avKB3abbOfY/s1600/Beatiful%2BActress%2BDeepika%2BPadukone%2BWallpaper5.jpg" class="icon2"></span>
+                                    <span><img src="https://tse4.mm.bing.net/th?id=OIP.LigAjHwqlK7iX1vYINM2kwHaEo&pid=Api&P=0" class="icon2"></span>
+                                    <span><img src="https://tse2.mm.bing.net/th?id=OIP.TBJrVv87r85BJXJKlpwiDwHaFj&pid=Api&P=0" class="icon2"></span>
+                                </div>
+                                <div class="book-mark">
+                                   <span><img src="https://tse3.mm.bing.net/th?id=OIP.WHAfUyiV56elpVspM6eWIgHaJr&pid=Api&P=0" class="icon2"></span>
+                                </div>
+                            </div>
+                            <div class="liked-by">
+                                <span><img src="https://tse2.mm.bing.net/th?id=OIP.06AMzOcfgph7rtSDKeimBgHaEK&pid=Api&P=0" alt=""></span>
+                                <span><img src="img/p4.png" alt=""></span>
+                                <span><img src="https://tse1.mm.bing.net/th?id=OIP.tzX5s5ePF29I_rxlyUcXywHaEl&pid=Api&P=0" alt=""></span>
+                                <p>like by <b>deniel rivar </b> and<b> 105 others pepoles</b></p>                                                                  
+                            </div>
+                            <div class="caption">
+                                <p><b>angela rose</b>Lorem, ipsum dolor sit amet consectetur. <span class="hash-teg">#lifestyle</span></p>
+                            </div> 
+                            <div class="text-gry comment">view all comments</div> 
+                    </div>  
+                                   
+                </div>
+                <!--..................feeds.end................................-->
+            </div>
+             <!-- =======MAIN RIGHT======= -->
+            <div class="main-right">
+                <div class="messages" id="message-box">
+                    <div class="message-heading">
+                        <h4>message</h4><span><img src="https://wallpapercave.com/wp/wp5144979.jpg" class="icon1"></span>
+                    </div>
+                    <!-- searchbar -->
+                    <div class="search-bar">
+                        <span><img src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png" class="icon2"></span>
+                        <input type="search" placeholder="search message" class="message-search">
+                    </div>
+                    <!-- messagecategory -->
+                    <div class="category">
+                        <h6 class="active">firends</h6>
+                        <h6 class="">followrs</h6>
+                        <h6 class="pr-requst">request(4)</h6>
+                    </div>
+                    <!-- messgae -->
+                    <div class="message">
+                        <div class="profile-phots">
+                            <div class="ac"></div>
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.S7Ty016krxjaH7zh7w2DswHaIs&pid=Api&P=0" alt="">
+                        </div>
+                        <div class="messgae-body">
+                            <h5>Gill</h5>
+                            <p class="text-gry">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>                    
+                    <div class="message">
+                        <div class="profile-phots">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.BmK-Zz9dM8JmN40OQ23qeAHaG_&pid=Api&P=0s" alt="">
+                        </div>
+                        <div class="messgae-body">
+                            <h5>Akhil</h5>
+                            <p class="text-gry">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>                    
+                    <div class="message">                        
+                        <div class="profile-phots">
+                            <div class="ac"></div>
+                            <img src="https://tse3.mm.bing.net/th?id=OIP.1og-UkSmaWWl8nUwW7fzJQHaKX&pid=Api&P=0" alt="">
+                        </div>
+                        <div class="messgae-body">
+                            <h5>SKY</h5>
+                            <p class="text-gry">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>                    
+                    <div class="message">
+                        <div class="profile-phots">
+                            <img src="https://tse3.mm.bing.net/th?id=OIP.e2N3qEJQYIPSq7N80-KOOAHaHn&pid=Api&P=0" alt="">
+                        </div>
+                        <div class="messgae-body">
+                            <h5>Uravasi Rautela</h5>
+                            <p class="text-gry">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>                    
+                    <div class="message ">
+                        <div class="profile-phots">
+                            <div class="ac"></div>
+                            <img src="https://tse3.mm.bing.net/th?id=OIP.P75IA4SYX3nmVkCq5B3WEgHaJQ&pid=Api&P=0" alt="">
+                        </div>
+                        <div class="messgae-body">
+                            <h5>Sara khans</h5>
+                            <p class="text-gry">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>                    
+                </div> 
+                <!--firend request-->
+                <div class="firend-requests">
+                    <h4>request</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-phots">
+                                <img src="https://tse4.mm.bing.net/th?id=OIP.VfALsZW2a4mb-fJUTG51WgHaEc&pid=Api&P=0" alt="">
+                            </div>
+                            <div class="request-body">
+                                <h5>J Root</h5>
+                                <p class="text-gry">10 mutual firend</p>
+                            </div>                            
+                        </div>                                            
+                        <div class="action">                            
+                            <button class="btn btn-primary" id="add">accept</button>
+                            <button class="btn btn" id="del">delete</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-phots">
+                                <img src="https://tse3.mm.bing.net/th?id=OIP.4TwkG4zkZXnAd3BldSApdAHaEc&pid=Api&P=0" alt="">
+                            </div>
+                            <div class="request-body">
+                                <h5>Ishan Kishans</h5>
+                                <p class="text-gry">10 mutual firend</p>
+                            </div>                            
+                        </div>
+                        
+                        <div class="action">
+                            <button class="btn btn-primary" id="add">accept</button>
+                            <button class="btn " id="del">delete</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-phots">
+                                <img src="https://i.pinimg.com/originals/2a/cd/7e/2acd7e4f978c11249b0e766d4eaa1164.jpg" alt="">
+                            </div>
+                            <div class="request-body">
+                                <h5>Keerthy suresh</h5>
+                                <p class="text-gry">10 mutual firend</p>
+                            </div>                            
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary" id="add">accept</button>
+                            <button class="btn " id="del">delete</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-phots">
+                                <img src="https://tse3.mm.bing.net/th?id=OIP.alYbv39H1B66yRr6NsT8nQHaLI&pid=Api&P=0" alt="">
+                            </div>
+                            <div class="request-body">
+                                <h5>Victory Venkatesh</h5>
+                                <p class="text-gry">10 mutual firend</p>
+                            </div>                            
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary" id="add">accept</button>
+                            <button class="btn " id="del">delete</button>
+                        </div>
+                    </div>
+                </div>           
+            </div>
+        </div>
+    </main>
+
+    <!--................. THEME CUSTOMIZE.START............. -->
+    <div class="theme">
+        <div class="card">
+            <h2>CUSTOMIZE yuor site</h2>
+            <p class="text-gry">manage your font, color, and backgroud</p>
+
+
+            <!--........... FONT-SIZE........... -->
+            <div class="font-siz">
+                <div>
+                    <h6>aa</h6>
+                    <div class="choose-font-size">
+                        <span class="font1"></span>
+                        <span class="font2 active"></span>
+                        <span class="font3"></span>
+                        <span class="font4"></span>
+                        <span class="font5"></span>
+                    </div>
+                    <h3>aa</h3>
+                </div>               
+            </div>
+
+            <!--.................. COLOR................ -->
+        <div class="color">
+            <h3>color</h3>
+            <div class="choose-color">
+                <span class="color1"></span>
+                <span class="color2"></span>
+                <span class="color3 active"></span>
+                <span class="color4"></span>
+                <span class="color5"></span>
+            </div>
+        </div>
+
+        <!--.............BACKGROUND.............. -->
+        <div class="background">
+            <h3>backgorund</h3>
+            <div class="chosse-backgorund">
+                <div class="bg1 active">
+                    <span></span>
+                    <h5 class="bg1">light</h5>
+                </div>
+                <div class="bg2">
+                    <span></span>
+                    <h5 class="bg2">dark</h5>
+                </div>
+                <div class="bg3">
+                    <span></span>
+                    <h5 class="bg3">black</h5>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <!--.............THEME CUSTOMIZE.END...... -->
+    <!-- ................END MAINE SECTION......................... -->
+
+
+
+    <!-- .............CUSTOM JS LINK...................... -->
+    <script src="script.js"></script>
+</body>
+</html>
